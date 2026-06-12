@@ -1,0 +1,21 @@
+{
+  "name": "@cinefam/db",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schema": "./src/schema/index.ts",
+    "./types": "./src/types.ts"
+  },
+  "scripts": {
+    "check-types": "tsgo --noEmit"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.2"
+  },
+  "devDependencies": {
+    "@typescript/native-preview": "7.0.0-dev.20260519.1",
+    "typescript": "6.0.3"
+  }
+}
