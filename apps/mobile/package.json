@@ -3,8 +3,7 @@
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
-    "start": "expo start",
-    "no-dev": "APP_VARIANT=development expo start",
+    "start": "APP_VARIANT=development expo start",
     "eas-build-pre-install": "node ./scripts/materialize-google-services.js",
     "android": "expo run:android",
     "run:android": "expo run:android",

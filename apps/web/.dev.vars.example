@@ -1,6 +1,6 @@
 BETTER_AUTH_SECRET=replace-with-random-secret
-BETTER_AUTH_URL=http://localhost:3072
-CORS_ORIGINS=http://localhost:3072,http://localhost:8081
+BETTER_AUTH_URL=http://localhost:3074
+CORS_ORIGINS=http://localhost:3074,http://localhost:8081
 ADMIN_EMAIL=you@example.com
 TMDB_API_KEY=your-tmdb-api-key
 DATABASE_URL=postgresql://postgres:postgres@localhost:5432/cinefam
