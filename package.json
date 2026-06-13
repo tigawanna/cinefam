@@ -12,7 +12,15 @@
     "quality": "turbo run //#lint //#format",
     "quality:fix": "turbo run //#lint:fix //#format:fix",
     "prepare": "vp config",
-    "deploy:web": "pnpm --filter web deploy"
+    "deploy:web": "pnpm --filter web deploy",
+    "build-dev:local": "pnpm --filter mobile build-dev:local",
+    "build:preview": "pnpm --filter mobile build:preview",
+    "build:preview:local": "pnpm --filter mobile build:preview:local",
+    "build:preview:arm64:local": "pnpm --filter mobile build:preview:arm64:local",
+    "build:preview:eas": "pnpm --filter mobile build:preview:eas",
+    "build:production:local": "pnpm --filter mobile build:production:local",
+    "build:store": "pnpm --filter mobile build:store",
+    "submit:store": "pnpm --filter mobile submit:store"
   },
   "devDependencies": {
     "@typescript/native-preview": "7.0.0-dev.20260519.1",
@@ -31,7 +39,10 @@
       "vitest": "npm:@voidzero-dev/vite-plus-test@^0.1.20"
     },
     "peerDependencyRules": {
-      "allowAny": ["vite", "vitest"],
+      "allowAny": [
+        "vite",
+        "vitest"
+      ],
       "allowedVersions": {
         "vite": "*",
         "vitest": "*"

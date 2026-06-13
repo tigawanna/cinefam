@@ -1,3 +1,4 @@
+import { useRegisterCrashalytics } from "@/lib/react-native-firebase/crashalytics/use-register-crashalytics";
 import { asyncStoragePersister, PersistQueryClientProvider, queryClient } from "@/lib/tanstack/client";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
@@ -5,6 +6,7 @@ import { MD3DarkTheme, MD3LightTheme, PaperProvider } from "react-native-paper";
 import { useColorScheme } from "react-native";
 
 export default function RootLayout() {
+  useRegisterCrashalytics();
   const colorScheme = useColorScheme();
   const theme = colorScheme === "dark" ? MD3DarkTheme : MD3LightTheme;
 
