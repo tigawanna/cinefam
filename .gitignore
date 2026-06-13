@@ -34,5 +34,8 @@ expo-env.d.ts
 .secrets
 google-services*.json
 GoogleService-Info.plist
+# Mobile / EAS build artifacts
 *.apk
 *.aab
+*.ipa
+build-*
